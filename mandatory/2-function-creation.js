@@ -7,19 +7,11 @@ Tip: use logical operators
 */
 
 function validate(num) {
-  if (typeof(num) == 'string') {
-    return false
+  if (typeof(num) !== 'string' && num <= 100 && num % 2 === 0) {
+    return true;
   } else {
-  if (num <= 100) {
-    if (num % 2 === 0) {
-      return true;
-    } else {
-      return false;
-    }
-  }  else {
-      return false;
+  return false;
   }
-}
 }
 
 /*
@@ -32,10 +24,10 @@ Write a function that:
 
 function formatPercentage(num) {
   if (num > 100) {
-    let num = 100;
+    num = 100;
   return `${num}%`;
   } else { 
-    return `${Math.round(num * 100) / 100}%`;
+    return `${Number(num.toFixed(2))}%`;
   }
 }
 

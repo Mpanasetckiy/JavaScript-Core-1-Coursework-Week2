@@ -10,24 +10,12 @@
 
 */
 
-function mood(e) {
-  let isHappy = e;
-
-  if (isHappy == true) {
-    return "I am happy";
-  } else {
-    return "I am not happy";
-  }
+function mood(isHappy) {
+  return isHappy? "I am happy" : "I am not happy";
 }
 
-function greaterThan10(num) {
-  let isBigEnough = num;
-
-  if (isBigEnough > 10) {
-    return "num is greater than 10";
-  } else {
-    return "num is not big enough";
-  }
+function greaterThan10(isBigEnough) {
+  return isBigEnough > 10? "num is greater than 10" : "num is not big enough";
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */

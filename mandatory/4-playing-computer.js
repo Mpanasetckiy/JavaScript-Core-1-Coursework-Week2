@@ -39,4 +39,5 @@ for (let i = 0; i < 5; ++i) {
     const e = f1(i, a);
     console.log(e);
   }
+  console.log(e)
 }
